@@ -42,8 +42,6 @@ h1{
     background-color: rgb(245, 250, 253);
 }
 
-
-
 .experiences-container, .projet-container, .hobbit-container {
     background-color: #e2d5ee;
     padding: 10px 20px;
@@ -94,15 +92,43 @@ h1{
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 450px);
     gap: 20px;
 }
 
-.contact-container {
+
+
+.contact-container h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+.contact-details {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    p {
+        font-size: 16px;
+        margin: 20px 0px;
+    }
+    .contact-infos {
+        div {
+            background-color: #e2d5ee;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            margin: 10px 10px;
+            padding: 1px 1px;
+            p {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
 }
 
 .btn-custom {
@@ -111,10 +137,11 @@ h1{
 }
 
 .btn-custom:hover {
-    background-color: #bd97e0;
-    border-color: #bd97e0;
+    background-color: #884ebe;
+    border-color: #884ebe;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
+
 
 .input {
     position: relative;
@@ -124,17 +151,20 @@ h1{
         height: 40px;
         border-radius: 5px;
         border: 1px solid black;
-        padding-left: 8px;
+        padding-left: 8px;  
+        transition: ease 0.3s;
     }
     label {
         position: absolute;
         bottom: 7px;
         right: 10px;
+        transition: ease 0.3s;
     }
     textarea {
         width: 100%;
         min-height: 250px;
         padding-left: 8px;
+        transition: ease 0.3s;
     }
 }
 
@@ -157,11 +187,15 @@ input:focus, input:hover, textarea:focus, textarea:hover {
         font-size: 16px
     }
     .contact-infos div {
+        background-color: #e2d5ee;
+        border-radius: 20px;
         display: flex;
-        align-items: center;    
+        align-items: center;
+        margin: 10px 10px;
+        padding: 1px 1px;
         p {
-            margin: 10px 10px;
             font-size: 16px;
+            margin: 0 10px;
         }
         img {
             width: 30px;
@@ -169,6 +203,8 @@ input:focus, input:hover, textarea:focus, textarea:hover {
         }
     }
 }
+
+
 
 .contact-infos {
     margin-bottom: 40px;
@@ -197,13 +233,17 @@ form {
     height: 100%;
     top: 0px;
     left: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     text-align: center;
     img {
         width: 100px;
+    }
+    .translate-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            margin: 80px;
+        }
     }
 }
 
@@ -236,7 +276,7 @@ form {
     gap: 20px;
     img {
         height: auto;
-        width: 80px; 
+        width: 80px;
     }
 }
 
@@ -337,20 +377,19 @@ form {
     background-color: rgb(215, 198, 233);
 }
 
-
-
 .projet-container {
     h1 {
         text-align: center;
+        margin-bottom: 30px;
     }
     p {
         font-size: 16px;
     }
     .qr-container{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         img {
-            width: 98px;
+            width: 78px;
             border: 1px dotted blueviolet;
         }
     }
@@ -360,11 +399,12 @@ form {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
+    margin-top: 40px;
     p {
         font-size: 18spx;
         font-weight: 600;
         img {
-            height: 90px;
+            height: 78px;
         };
     }
 }
@@ -440,9 +480,8 @@ form {
     }
 
     .grid-container {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 400px);
+        grid-template-rows: repeat(2, 450px);
         width: 100%;
     }
 
@@ -461,6 +500,7 @@ form {
     .grid-container {
         align-content: center;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 450px;
         gap: 10px;
     }
 
@@ -501,7 +541,7 @@ form {
     .grid-container {
         align-content: center;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 400px);
+        grid-template-rows: repeat(6, 450px);
         gap: 10px;
     }
 
