@@ -24,7 +24,7 @@ p {
 }
 
 h1{
-    margin: 10px;
+    margin: 10px 0px;
 }
 
 .title, .sub-title {
@@ -59,7 +59,7 @@ h1{
     display: flex;
     justify-content: center;
     height: 95vh;
-    margin: 30px 30px;
+    margin: 10px 30px;
     .presentation-container {
         display: flex;
         flex-direction: column;
@@ -68,7 +68,9 @@ h1{
         width: 40%;
         .presentation-top-container {
             display: flex;
-            margin-top: 50px;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
             align-items: center;
             .image-avatar-container {
                 height: 300px;
@@ -86,7 +88,36 @@ h1{
            justify-content: center;
            padding: 10px 10px;
         }
+        .soft-skills ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0px 0px;
+            border-radius: 10px;
+            background-color: #e2d5ee;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.274);
+            li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                font-weight: 600;
+                background-color: #e2d5ee;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-radius: 10px;
+                width: 24.5%;
+                height: 70px;
+                transition: ease-in-out 0.5s;
+            }
+        }
     }
+}
+
+.soft-skill:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.233);
+    background-color: white;
 }
 
 .grid-container {
