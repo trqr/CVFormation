@@ -63,7 +63,7 @@ h1{
     .presentation-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 10px 30px;
         width: 40%;
         .presentation-top-container {
@@ -518,7 +518,7 @@ form {
 
     .presentation-container {
         flex-direction: column !important;
-        width: 100% !important;
+        width: 95% !important;
         height: auto;
         .presentation-top-container {
             flex-direction: row;
@@ -537,7 +537,7 @@ form {
 
     .presentation-container {
         flex-direction: column !important;
-        width: 100% !important;
+        width: 95% !important;
         .presentation-top-container {
             flex-direction: column;
         }
@@ -576,11 +576,21 @@ form {
         gap: 10px;
     }
 
+    .main-container {
+        padding: 0px 0px;
+    }
     .presentation-container {
         flex-direction: column !important;
-        width: 100% !important;
+        align-self: center;
+        text-align: center;
+        width: 95% !important;
+        margin: 0px 0px;
+        padding: 0px 0px;
     }
 
+    .soft-skills li{
+        font-size: 14px !important;
+    }
     
     .translate-container:target  {
         transition: ease-in-out 1s;
