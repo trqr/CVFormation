@@ -27,8 +27,13 @@ h1{
     margin: 10px 0px;
 }
 
-.title, .sub-title {
+.title {
     font-size: 50px;
+}
+
+.sub-title {
+    font-size: 40px;
+    margin-right: 10px;
 }
 
 .box {
